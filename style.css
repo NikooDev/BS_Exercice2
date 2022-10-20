@@ -1,0 +1,84 @@
+/**
+STYLE.CSS
+ */
+
+/* Global */
+:root {
+	--primary: #8C1A11;
+	--primary-light: #a92d23;
+	--primary-dark: #540B06;
+	--secondary: #45ad17;
+	--pacifico: Pacifico, Helvetica, Arial, sans-serif;
+}
+
+/* Fonts */
+.pacifico {
+	font-family: var(--pacifico);
+}
+
+/* Background */
+.bg-red {
+	background-color: var(--primary);
+}
+.bg-red-dark {
+	background-color: var(--primary-dark);
+}
+.bg-home {
+	background: url("./img/pizza-2810589_1920.jpg") fixed no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+/* Color */
+.text-green {
+	color: var(--secondary);
+}
+
+/* Size */
+.m-h-4 {
+	min-height: 4.5rem;
+}
+
+/* Radius */
+.rounded-30 {
+	border-radius: 30px;
+}
+
+/* Intro */
+.btn-red {
+	background-color: var(--primary);
+	font-size: 1.4rem;
+	font-weight: 600;
+	width: 35%;
+	top: 10rem;
+	margin-top: 10rem;
+}
+.btn-red:hover {
+	background-color: var(--primary-light);
+}
+@media screen and (max-width: 768px){
+	.btn-red {
+		width: 90%;
+	}
+}
+
+/* Carte */
+@media screen and (min-width: 1120px) {
+	.text-reponsive {
+		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.text-reponsive {
+		font-size: 1.5rem;
+	}
+}
+
+/* Service */
+@media screen and (max-width: 768px){
+	.card-text {
+		min-height: 350px;
+		display: flex;
+		align-items: center;
+	}
+}
